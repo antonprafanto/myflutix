@@ -26,10 +26,21 @@ class MyApp extends StatelessWidget {
                 backgroundColor: Colors.red, // foreground
               ),
               onPressed: () async {
-                await AutServices.signUp("antonprafanto@gmail.com", "1234125",
+                await AutServices.signUp("antonprafao@gmail.com", "1234125",
                     "anton", ["Action", "Horror", "Sci-Fi", "Drama"], "Korean");
               },
               child: const Text('Sign Up'),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor:
+                    Color.fromARGB(255, 52, 123, 255), // foreground
+              ),
+              onPressed: () async {
+                await AutServices.signIn("antonprafao@gmail.com", "1234125");
+              },
+              child: const Text('Sign In'),
             )
           ],
         ),

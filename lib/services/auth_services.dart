@@ -4,13 +4,9 @@ class AutServices {
   // ignore: prefer_final_fields
   static FirebaseAuth _auth = FirebaseAuth.instance;
 
-  static String? get id => null;
+  static get user1 => null;
 
-  static int? get balance => null;
-
-  static get user2 => null;
-
-  static Future signUp(String email, String password, String name,
+  static Future<void> signUp(String email, String password, String name,
       List<String> selectedGenres, String selectedLanguage) async {
     try {
       UserCredential result = await _auth.createUserWithEmailAndPassword(
@@ -24,4 +20,18 @@ class AutServices {
       await UserService.updateUser(user1);
     } catch (e) {}
   }
+
+  static Future<void> signIn(String email, String password) async {
+    try {
+      UserCredential result = (await _auth.signInWithEmailAndPassword(
+          email: email, password: password));
+    } catch (e) {}
+  }
+}
+
+class SignInSignUpResult {
+  final User1 user1;
+  final String message;
+
+  SignInSignUpResult({required this.user1, required this.message});
 }

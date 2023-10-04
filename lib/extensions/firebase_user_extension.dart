@@ -8,4 +8,6 @@ extension FirebaseUserExtension on User {
           String selectedLanguage = "English",
           int balance = 50000}) =>
       User1(uid, email, name, selectedGenres, selectedLanguage, balance);
+
+  Future<User1> fromFireStore() async => await UserService.getUser(this.uid);
 }
