@@ -1,0 +1,4 @@
+1. C:\Users\anton\Documents\flutter_project\myflutix\lib
+2. C:\Users\anton\Documents\flutter_project\myflutix\android\app\build.gradle
+3. C:\Users\anton\Documents\flutter_project\myflutix\android\build.gradle
+4. C:\Users\anton\Documents\flutter_project\myflutix\pubspec.yaml

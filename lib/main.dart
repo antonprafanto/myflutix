@@ -33,10 +33,10 @@ class MyApp extends StatelessWidget {
                   // Ketika tombol "Sign Up" ditekan, panggil metode signUp dari AutServices
                   // untuk mendaftarkan pengguna dengan data yang telah ditentukan.
                   await AutServices.signUp(
-                      "antonprafao@gmail.com",
-                      "1234125",
+                      "sifa@gmail.com",
+                      "123456",
                       "anton",
-                      ["Action", "Horror", "Sci-Fi", "Drama"],
+                      ["Romantic", "Horror", "Sci-Fi", "Drama"],
                       "Korean");
                 },
                 child: const Text('Sign Up'),
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
                 onPressed: () async {
                   // Ketika tombol "Sign In" ditekan, panggil metode signIn dari AutServices
                   // untuk mengotentikasi pengguna dengan data yang telah ditentukan.
-                  await AutServices.signIn("antonprafao@gmail.com", "1234125");
+                  await AutServices.signIn("sifa@gmail.com", "123456");
                 },
                 child: const Text('Sign In'),
               )
